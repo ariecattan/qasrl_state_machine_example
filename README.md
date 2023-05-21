@@ -25,6 +25,12 @@ Alternatively, if `input_file.csv` includes a `sentence` column with the sentenc
 
 * `docker run -it -v "$(pwd)/data/:/data" --rm --name qasrl hirscheran/qasrl_state_machine_example "file" "/data/input_qanom_file.csv" "/data/output_qanom_file.csv"`
 
+Run the state machine on all subdirectories (e.g all checkpoints), each one with a `pred_file.csv` file. The script will save a file called `pred_result.csv` for each `pred_file`. 
+
+```bash 
+bash run_all.sh [path_to_dir]
+```
+
 ## Development
 
 See original project or the Dockerfile for development instructions.
